@@ -46,27 +46,31 @@
             },
             "aggregateRating": {
                 "@type": "AggregateRating",
-                "ratingValue": "5.0",
-                "reviewCount": "3555"
+                "ratingValue": "4.9",
+                "reviewCount": "3615"
             }
         }
     </script>
-    <link rel="stylesheet" href="/static/css/base.css?v=20250818">
+    <link rel="stylesheet" href="/static/css/base.css?v=20250819">
 </head>
 <body>
-<!-- 头部导航 -->
 <header>
     <div class="container">
         <nav>
-            <a href="/" class="logo">微信账号交易平台</a>
-            <nav class="nav-links" role="navigation" aria-label="主导航">
-                <a href="/#home" class="active">首页</a>
-                <a href="/#accounts" title="浏览所有微信账号">账号大厅</a>
+            <div class="logo">微信账号交易平台</div>
+            <button class="mobile-menu-btn" aria-label="切换菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="/#home">首页</a>
+                <a href="/#accounts" class="active" title="浏览所有微信账号">账号大厅</a>
                 <a href="/article.html" title="文章列表">文章列表</a>
                 <a href="/#about" title="了解我们的服务">关于我们</a>
                 <a href="/#contact" title="联系客服">联系我们</a>
                 <a href="/#orders" title="查询订单状态">订单查询</a>
-            </nav>
+            </div>
         </nav>
     </div>
 </header>
@@ -117,7 +121,7 @@
 
             <!-- 购买选项 -->
             <div class="purchase-options">
-                <h3 class="option-title">🛒 购买选项</h3>
+                <h3 class="option-title">购买选项</h3>
 
                 <!-- 邮箱输入 -->
                 <div class="form-group">
@@ -128,31 +132,42 @@
 
                 <!-- 数量选择 -->
                 <div class="form-group">
-                    <label class="form-label">购买数量</label>
+                    <label class="form-label">购买数量 <span class="required">*</span></label>
                     <div class="quantity-selector">
                         <button class="quantity-btn subtract">-</button>
                         <input type="number" class="quantity-input" id="quantity" value="1" min="1" max="3">
                         <button class="quantity-btn increase">+</button>
-                        <span style="margin-left: 10px; color: #64748b; font-size: 14px;">库存充足</span>
                     </div>
                 </div>
 
-                <!-- 支付方式 -->
-                <div class="payment-methods">
-                    <label class="form-label">支付方式</label>
-                    <div class="payment-option selected select-payment">
-                        <div class="payment-icon">💰</div>
-                        <div class="payment-info">
-                            <div class="payment-name">USDT (TRC20)</div>
-                            <div class="payment-desc">推荐使用，手续费低，即时到账</div>
-                        </div>
-                    </div>
-                    <div class="payment-option select-payment">
-                        <div class="payment-icon">💵</div>
-                        <div class="payment-info">
-                            <div class="payment-name">USDT (ERC20)</div>
-                            <div class="payment-desc">以太坊网络，支持主流钱包</div>
-                        </div>
+                <div class="payment-section">
+                    <div class="form-label">支付方式 <span class="required">*</span></div>
+                    <div class="payment-methods">
+                        <label class="payment-method selected">
+                            <div class="payment-icon">
+                                <img src="/static/img/usdt-trc20.png" alt="USDT-TRC20" width="48" height="48">
+                            </div>
+                            <div class="payment-text">USDT-TRC20</div>
+                        </label>
+
+                        <label class="payment-method">
+                            <div class="payment-icon">
+                                <img src="/static/img/usdt-erc20.png" alt="USDT-ERC20" width="48" height="48">
+                            </div>
+                            <div class="payment-text">USDT-ERC20</div>
+                        </label>
+                        <label class="payment-method">
+                            <div class="payment-icon">
+                                <img src="/static/img/usdt-bep20.png" alt="USDT-BEP20" width="48" height="48">
+                            </div>
+                            <div class="payment-text">USDT-BEP20</div>
+                        </label>
+                        <label class="payment-method">
+                            <div class="payment-icon">
+                                <img src="/static/img/usdt-sol.png" alt="USDT-Solana" width="48" height="48">
+                            </div>
+                            <div class="payment-text">USDT-Solana</div>
+                        </label>
                     </div>
                 </div>
 
@@ -214,10 +229,7 @@
 <div class="modal-overlay" id="purchaseModal">
     <div class="modal-content">
         <div class="modal-header">
-            <h3 class="modal-title">
-                <span>🛒</span>
-                确认订单信息
-            </h3>
+            <h3 class="modal-title">确认订单信息</h3>
             <button class="close-btn close-modal-btn">×</button>
         </div>
 
@@ -232,10 +244,10 @@
 
                 <!-- 订单摘要 -->
                 <div class="order-summary">
-                    <h4 class="summary-title"><span>📋</span>订单详情</h4>
+                    <h4 class="summary-title">订单详情</h4>
                     <div class="summary-row">
                         <span class="summary-label">商品名称</span>
-                        <span class="summary-value">优质个人认证微信号</span>
+                        <span class="summary-value" id="product_name"></span>
                     </div>
                     <div class="summary-row">
                         <span class="summary-label">收件邮箱</span>
@@ -247,7 +259,7 @@
                     </div>
                     <div class="summary-row">
                         <span class="summary-label">单价</span>
-                        <span class="summary-value">$18.16</span>
+                        <span class="summary-value">$0.00</span>
                     </div>
                     <div class="summary-row summary-row-clear-bt">
                         <span class="summary-label">支付方式</span>
@@ -262,27 +274,15 @@
 
             <!-- 支付信息 -->
             <div class="payment-section">
-                <h4 class="payment-title"><span>💰</span>支付信息</h4>
-                <div class="selected-payment">
-                    <div class="payment-icon">💰</div>
-                    <div>
-                        <div class="payment-name" id="modalPaymentName">USDT (TRC20)</div>
-                        <div class="payment-desc">推荐使用，手续费低，即时到账</div>
-                    </div>
-                </div>
-
-                <!-- 收款地址 -->
+                <h4 class="payment-title">支付信息</h4>
                 <div class="address-section">
-                    <div class="address-label">USDT 收款地址</div>
+                    <div class="address-label"><span class="address-payment"></span> 收款地址</div>
                     <div class="address-value" id="usdtAddress"></div>
                     <button class="copy-btn" data-clipboard-text="">复制</button>
                 </div>
-
-                <!-- 二维码 -->
                 <div class="qr-section">
-                    <div class="qr-code" id="qr-code">
-                    </div>
-                    <p style="color: #64748b; font-size: 14px;">请使用支持 USDT 的钱包扫码支付</p>
+                    <div class="qr-code" id="qr-code"></div>
+                    <p style="color: #64748b; font-size: 14px;">请使用支持 <span class="address-payment"></span> 的钱包扫码支付</p>
                 </div>
             </div>
         </div>
@@ -298,6 +298,6 @@
 <script type="text/javascript" src="/static/js/jquery.min.js"></script>
 <script type="text/javascript" src="/static/js/qrcode.min.js"></script>
 <script type="text/javascript" src="/static/js/clipboard.min.js"></script>
-<script type="text/javascript" src="/static/js/global.js?v=20250818"></script>
+<script type="text/javascript" src="/static/js/global.js?v=20250819"></script>
 </body>
 </html>
