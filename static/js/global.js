@@ -13,19 +13,19 @@ function showToast(type, title, message, options) {
     const toast = createToast(type, title, message, options);
     const $container = $('#toastContainer');
     if ($container.length === 0) {
-        $('body').append('<div class="toast-container" id="toastContainer"></div>')
+        $('body').append('<div class="toast-container" id="toastContainer"></div>');
     }
     $('#toastContainer').append(toast.html);
     const $toast = $('#' + toast.id);
     setTimeout(() => {
-        $toast.addClass('show')
+        $toast.addClass('show');
     }, 10);
     if (toast.duration > 0) {
         setTimeout(() => {
-            closeToast(toast.id)
-        }, toast.duration)
+            closeToast(toast.id);
+        }, toast.duration);
     }
-    return toast.id
+    return toast.id;
 }
 
 window.closeToast = function (toastId) {
@@ -33,22 +33,22 @@ window.closeToast = function (toastId) {
     if ($toast.length) {
         $toast.removeClass('show');
         setTimeout(() => {
-            $toast.remove()
-        }, 300)
+            $toast.remove();
+        }, 300);
     }
 };
 
 function formatTime(seconds) {
     const minutes = Math.floor(seconds / 60);
     const secs = seconds % 60;
-    return `${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`
+    return `${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
 }
 
 function startCountdown() {
     remainingTime = 15 * 60;
     const timerElement = document.getElementById('countdownTimer');
     if (countdownInterval) {
-        clearInterval(countdownInterval)
+        clearInterval(countdownInterval);
     }
     timerElement.textContent = formatTime(remainingTime);
     timerElement.classList.remove('warning');
@@ -59,19 +59,19 @@ function startCountdown() {
             timerElement.textContent = '00:00';
             showToast('error', '', '订单已超时，请重新下单');
             closePurchaseModal();
-            return
+            return;
         }
         timerElement.textContent = formatTime(remainingTime);
         if (remainingTime <= 60) {
-            timerElement.classList.add('warning')
+            timerElement.classList.add('warning');
         }
-    }, 1000)
+    }, 1000);
 }
 
 function stopCountdown() {
     if (countdownInterval) {
         clearInterval(countdownInterval);
-        countdownInterval = null
+        countdownInterval = null;
     }
 }
 
@@ -79,7 +79,7 @@ function toggleMobileMenu() {
     const navLinks = document.getElementById('navLinks');
     const menuBtn = document.querySelector('.mobile-menu-btn');
     navLinks.classList.toggle('active');
-    menuBtn.classList.toggle('active')
+    menuBtn.classList.toggle('active');
 }
 
 $('.mobile-menu-btn').click(function () {
@@ -92,7 +92,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
         const menuBtn = document.querySelector('.mobile-menu-btn');
         if (window.innerWidth <= 767) {
             navLinks.classList.remove('active');
-            menuBtn.classList.remove('active')
+            menuBtn.classList.remove('active');
         }
     })
 });
@@ -114,7 +114,7 @@ $(function (){
 function searchOrder(event) {
     event.preventDefault();
     const input = event.target.querySelector('.search-input');
-    return showToast('error', '', '未找到订单')
+    return showToast('error', '', '未找到订单');
 }
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -126,9 +126,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             const targetPosition = target.offsetTop - headerHeight - 20;
             window.scrollTo({top: targetPosition, behavior: 'smooth'});
             document.querySelectorAll('.nav-links a').forEach(link => {
-                link.classList.remove('active')
+                link.classList.remove('active');
             });
-            this.classList.add('active')
+            this.classList.add('active');
         }
     })
 });
@@ -150,57 +150,57 @@ window.addEventListener('scroll', () => {
         const sectionId = section.getAttribute('id');
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelectorAll('.nav-links a').forEach(link => {
-                link.classList.remove('active')
+                link.classList.remove('active');
             });
-            document.querySelector(`.nav-links a[href="#${sectionId}"]`)?.classList.add('active')
+            document.querySelector(`.nav-links a[href="#${sectionId}"]`)?.classList.add('active');
         }
     })
 });
 $('.subtract').click(function () {
-    changeQuantity(-1)
+    changeQuantity(-1);
 });
 $('.increase').click(function () {
-    changeQuantity(1)
+    changeQuantity(1);
 });
 $('#quantity').change(function () {
-    updateTotal()
+    updateTotal();
 });
 $('#email').change(function () {
-    validateForm()
+    validateForm();
 });
 $('.payment-method').click(function () {
-    selectPayment($(this))
+    selectPayment($(this));
 });
 $('.close-modal-btn').click(function () {
-    closePurchaseModal()
+    closePurchaseModal();
 });
 
 function changeQuantity(delta) {
     const input = $('#quantity');
     const newValue = parseInt(input.val()) + delta;
-    if (newValue >= 1 && newValue <= 61) {
+    if (newValue >= 1 && newValue <= 999) {
         input.val(newValue);
-        updateTotal()
+        updateTotal();
     }
 }
 
 function updateTotal() {
     const quantity = parseInt($('#quantity').val()) || 1;
-    const unitPrice = 11.87;
+    const unitPrice = parseFloat($('#totalPrice').attr('data-price'));
     const total = quantity * unitPrice;
-    $('#totalPrice').text(`$${total.toLocaleString()}`)
+    $('#totalPrice').text(`$${total.toLocaleString()}`);
 }
 
 function selectPayment(element) {
     $('.payment-method').removeClass('selected');
-    $(element).addClass('selected')
+    $(element).addClass('selected');
 }
 
 function validateForm() {
     const email = $('#email').val();
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const isValid = emailRegex.test(email);
-    return isValid
+    return isValid;
 }
 
 function showPurchaseModal() {
@@ -257,38 +257,39 @@ function showPurchaseModal() {
 function closePurchaseModal() {
     const modal = $('#purchaseModal');
     modal.removeClass('active');
-    $('body').css('overflow', '')
+    $('body').css('overflow', '');
 }
 
 if (typeof ClipboardJS !== 'undefined') {
     var clipboard = new ClipboardJS('.copy-btn');
     clipboard.on('success', function (e) {
         showToast('success', '', '复制成功');
-        e.clearSelection()
+        e.clearSelection();
     })
 }
 
 $('#buyBtn').click(function () {
     if (!validateForm()) {
-        return showToast('error', '', '请填写正确的邮箱地址')
+        return showToast('error', '', '请填写正确的邮箱地址');
     }
     showToast('success', '', '创建订单成功');
-    showPurchaseModal()
+    showPurchaseModal();
 });
 
 window.addEventListener('beforeunload', () => {
-    stopCountdown()
+    stopCountdown();
 });
+
 $(document).ready(function () {
     $('#purchaseModal').on('click', function (e) {
         if (e.target === this) {
-            closePurchaseModal()
+            closePurchaseModal();
         }
     });
 
     $(document).on('keydown', function (e) {
         if (e.key === 'Escape') {
-            closePurchaseModal()
+            closePurchaseModal();
         }
     });
 });
