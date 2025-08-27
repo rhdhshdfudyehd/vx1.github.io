@@ -209,10 +209,12 @@ function showPurchaseModal() {
         total = $('#totalPrice').text(),
         _payment = $('.payment-method.selected'),
         payment = _payment.find('.payment-text').html(),
-        product_name = $('.detail-info > h1').html();
+        product_name = $('.detail-info > h1').html(),
+        price = parseFloat($('#totalPrice').attr('data-price'));
 
     $('#summaryEmail').text(email);
     $('#summaryQuantity').text(quantity);
+    $('#summaryPrice').text('$'+price);
     $('#summaryTotal').text(total);
     $('#summaryPayment').text(payment);
     $('.address-payment').text(payment);
