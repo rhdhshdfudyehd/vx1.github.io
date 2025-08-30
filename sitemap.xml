@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.weixinh.com/</loc>
-    <lastmod>2025-08-29</lastmod>
+    <lastmod>2025-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.weixinh.com/article.html</loc>
-    <lastmod>2025-08-29</lastmod>
+    <lastmod>2025-08-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -249,6 +249,18 @@
   <url>
     <loc>https://www.weixinh.com/article/微信号购买指南%20如何选择最适合您的微信账号.html</loc>
     <lastmod>2025-08-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.weixinh.com/article/为什么要购买微信号%205个你可能没想到的使用场景.html</loc>
+    <lastmod>2025-08-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.weixinh.com/article/微信号购买指南%20如何快速获取您心仪的专业微信号.html</loc>
+    <lastmod>2025-08-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
