@@ -2,13 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.weixinh.com/</loc>
-    <lastmod>2025-10-04</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.weixinh.com/article.html</loc>
-    <lastmod>2025-10-04</lastmod>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.weixinh.com/article-2.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.weixinh.com/article-3.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.weixinh.com/article-4.html</loc>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -447,6 +465,36 @@
   <url>
     <loc>https://www.weixinh.com/article/微信小号自助购买现代社交管理的智慧选择.html</loc>
     <lastmod>2025-10-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.weixinh.com/article/实名微信号的重要性与安全使用指南.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.weixinh.com/article/微信号出售市场现状与正规交易指南.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.weixinh.com/article/微信号交易平台选择指南安全合规的账号流转服务.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.weixinh.com/article/微信号购买指南安全合规的账号获取方式与注意事项.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.weixinh.com/article/国外微信号购买指南安全获取与使用国际版微信的合法途径.html</loc>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
