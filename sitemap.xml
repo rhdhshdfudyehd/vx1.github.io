@@ -2,31 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.weixinh.com/</loc>
-    <lastmod>2025-11-14</lastmod>
+    <lastmod>2025-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.weixinh.com/article.html</loc>
-    <lastmod>2025-11-14</lastmod>
+    <lastmod>2025-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.weixinh.com/article-2.html</loc>
-    <lastmod>2025-11-14</lastmod>
+    <lastmod>2025-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.weixinh.com/article-3.html</loc>
-    <lastmod>2025-11-14</lastmod>
+    <lastmod>2025-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.weixinh.com/article-4.html</loc>
-    <lastmod>2025-11-14</lastmod>
+    <lastmod>2025-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.weixinh.com/article-5.html</loc>
+    <lastmod>2025-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -495,6 +501,36 @@
   <url>
     <loc>https://www.weixinh.com/article/国外微信号购买指南安全获取与使用国际版微信的合法途径.html</loc>
     <lastmod>2025-11-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.weixinh.com/article/实名微信号购买指南安全合规的账号获取方式与注意事项.html</loc>
+    <lastmod>2025-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.weixinh.com/article/微信号平台全面解析功能优势与商业应用指南.html</loc>
+    <lastmod>2025-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.weixinh.com/article/微信号购买自动发货平台的选择与使用指南.html</loc>
+    <lastmod>2025-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.weixinh.com/article/微信号转让指南安全合规的账号交易流程与注意事项.html</loc>
+    <lastmod>2025-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.weixinh.com/article/私人微信号的正确使用与安全指南.html</loc>
+    <lastmod>2025-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
