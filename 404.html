@@ -19,6 +19,7 @@
 				background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 				min-height: 100vh;
 				display: flex;
+				flex-direction: column;
 				justify-content: center;
 				align-items: center;
 				padding: 20px;
@@ -33,6 +34,7 @@
 				background: rgba(255, 255, 255, 0.9);
 				border-radius: 20px;
 				box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+				margin-bottom: 20px;
 			}
 
 			.error-code {
@@ -188,7 +190,40 @@
 			.product-btn:hover {
 				box-shadow: 0 5px 15px rgba(7, 193, 96, .4);
 			}
+			
+			.footer-copyright {
+				text-align: center;
+				color: #64748b;
+				font-size: 14px;
+				padding: 20px;
+				width: 100%;
+				max-width: 1000px;
+				margin: 0 auto;
+			}
 
+			.footer-copyright p {
+				margin: 5px 0;
+			}
+
+			.copyright-links {
+				margin-top: 10px;
+				display: flex;
+				justify-content: center;
+				gap: 20px;
+				flex-wrap: wrap;
+			}
+
+			.copyright-links a {
+				color: #64748b;
+				text-decoration: none;
+				font-size: 13px;
+				transition: color 0.3s ease;
+			}
+
+			.copyright-links a:hover {
+				color: #07c160;
+			}
+	
 			@media (max-width: 600px) {
 				.error-code {
 					font-size: 80px;
@@ -212,6 +247,15 @@
 				
 				.products-grid {
 					grid-template-columns: 1fr;
+				}
+				
+				.copyright-links {
+					flex-direction: column;
+					gap: 10px;
+				}
+
+				.copyright-links a {
+					font-size: 12px;
 				}
 			}
 		</style>
@@ -271,5 +315,9 @@
 				</div>
 			</section>
 		</div>
+		
+		<footer class="footer-copyright">
+			<p>&copy; 2025 Weixinh.com, All rights reserved.</p>
+		</footer>
 	</body>
 </html>
