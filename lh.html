@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>微信老号购买 - 稳定、高权重、功能完整的专业账号</title>
+		<meta name="description" content="专注提供高权重实名微信号、营销微信小号批发及各类微信号出售服务，系统支持24小时全自动发货，保障交易瞬时完成。本平台严格筛选货源，确保账号稳定耐封，是您寻找安全、专业微信号交易平台的首选。立即查看2026最新微信号库存，享受行业底价与完善的售后技术支持。">
+		<meta name="keywords" content="微信号购买,微信号批发,实名微信号购买,微信小号出售,微信号交易平台,微信号购买自动发货,买微信号">
+		<meta name="robots" content="index, follow">
+		<meta name="googlebot" content="index, follow">
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box
+			}
+
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif;
+				background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+				min-height: 100vh;
+				color: #2c3e50
+			}
+
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 0 20px
+			}
+
+			/* 头部导航样式 */
+			header {
+				background: hsla(0, 0%, 100%, .95);
+				backdrop-filter: blur(10px);
+				box-shadow: 0 4px 20px rgba(0, 0, 0, .08);
+				position: sticky;
+				top: 0;
+				z-index: 100
+			}
+
+			nav {
+				justify-content: space-between;
+				padding: 18px 0
+			}
+
+			.logo,
+			nav {
+				display: flex;
+				align-items: center
+			}
+
+			.logo {
+				font-size: 26px;
+				font-weight: 700;
+				background: linear-gradient(135deg, #07c160, #05a050);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				gap: 10px
+			}
+
+			.nav-links {
+				display: flex;
+				gap: 40px;
+				align-items: center
+			}
+
+			.nav-links a {
+				text-decoration: none;
+				color: #2c3e50;
+				font-weight: 500;
+				transition: all .3s;
+				position: relative
+			}
+
+			.nav-links a:after {
+				content: "";
+				position: absolute;
+				bottom: -5px;
+				left: 0;
+				width: 0;
+				height: 2px;
+				background: #07c160;
+				transition: width .3s
+			}
+
+			.nav-links a.active:after,
+			.nav-links a:hover:after {
+				width: 100%
+			}
+
+			.nav-links a.active,
+			.nav-links a:hover {
+				color: #07c160
+			}
+
+			.mobile-menu-btn {
+				display: none
+			}
+
+			/* 页面主内容区 */
+			.main-content {
+				margin: 40px 0
+			}
+
+			.weinh_com-hero-section {
+				background: linear-gradient(135deg, #07c160, #05a050);
+				color: #fff;
+				padding: 60px 40px;
+				border-radius: 20px;
+				margin-bottom: 40px;
+				text-align: center;
+				box-shadow: 0 10px 40px rgba(7, 193, 96, .2);
+				margin-top: 20px;
+			}
+
+			.hero-title {
+				font-size: 42px;
+				margin-bottom: 20px;
+				font-weight: 700;
+				line-height: 1.3
+			}
+
+			.hero-subtitle {
+				font-size: 20px;
+				margin-bottom: 30px;
+				opacity: .9;
+				max-width: 800px;
+				margin-left: auto;
+				margin-right: auto
+			}
+
+			.hero-btn {
+				padding: 18px 50px;
+				background: #fff;
+				color: #07c160;
+				border: none;
+				border-radius: 30px;
+				font-size: 20px;
+				font-weight: 600;
+				cursor: pointer;
+				transition: all .3s;
+				text-decoration: none;
+				display: inline-block
+			}
+
+			.hero-btn:hover {
+				transform: translateY(-3px);
+				box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+				background: #f8f9fa
+			}
+
+			/* 核心价值部分 */
+			.value-section {
+				margin-bottom: 50px
+			}
+
+			.section-title {
+				font-size: 32px;
+				text-align: center;
+				position: relative;
+				padding-bottom: 20px;
+				margin-bottom: 40px
+			}
+
+			.section-title:after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 60px;
+				height: 3px;
+				background: linear-gradient(135deg, #07c160, #05a050);
+				border-radius: 2px
+			}
+
+			.value-cards {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 30px;
+				margin-top: 30px
+			}
+
+			.value-card {
+				background: #fff;
+				border-radius: 15px;
+				padding: 35px 30px;
+				box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+				transition: all .3s;
+				text-align: center
+			}
+
+			.value-card:hover {
+				transform: translateY(-10px);
+				box-shadow: 0 15px 35px rgba(0, 0, 0, .12)
+			}
+
+			.value-icon {
+				width: 80px;
+				height: 80px;
+				background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0 auto 25px;
+				font-size: 36px;
+				color: #07c160
+			}
+
+			.value-card h3 {
+				font-size: 22px;
+				margin-bottom: 15px;
+				color: #2c3e50
+			}
+
+			.value-card p {
+				color: #64748b;
+				line-height: 1.7;
+				font-size: 16px
+			}
+
+			/* 对比部分 */
+			.comparison-section {
+				background: #fff;
+				border-radius: 20px;
+				padding: 50px 40px;
+				margin-bottom: 50px;
+				box-shadow: 0 10px 30px rgba(0, 0, 0, .08)
+			}
+
+			.comparison-grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 40px;
+				margin-top: 40px
+			}
+
+			.comparison-column {
+				position: relative
+			}
+
+			.comparison-column h3 {
+				font-size: 24px;
+				margin-bottom: 25px;
+				padding-bottom: 15px;
+				border-bottom: 2px solid #e9ecef
+			}
+
+			.comparison-column.new h3 {
+				color: #e74c3c
+			}
+
+			.comparison-column.old h3 {
+				color: #07c160
+			}
+
+			.comparison-item {
+				display: flex;
+				align-items: flex-start;
+				margin-bottom: 20px;
+				padding: 15px;
+				border-radius: 10px;
+				background: #f8f9fa
+			}
+
+			.comparison-item.new {
+				background: #fee;
+				border-left: 4px solid #e74c3c
+			}
+
+			.comparison-item.old {
+				background: #e8f8f0;
+				border-left: 4px solid #07c160
+			}
+
+			.comparison-icon {
+				font-size: 20px;
+				margin-right: 15px;
+				flex-shrink: 0;
+				margin-top: 2px
+			}
+
+			.comparison-text {
+				flex: 1
+			}
+
+			.comparison-text h4 {
+				font-size: 17px;
+				margin-bottom: 5px
+			}
+
+			.comparison-text p {
+				color: #64748b;
+				font-size: 15px;
+				line-height: 1.6
+			}
+
+			/* 特性部分 */
+			.features-section {
+				margin-bottom: 50px
+			}
+
+			.features-grid {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 30px;
+				margin-top: 30px
+			}
+
+			.feature-item {
+				background: #fff;
+				border-radius: 15px;
+				padding: 30px;
+				box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+				transition: all .3s
+			}
+
+			.feature-item:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 12px 30px rgba(0, 0, 0, .12)
+			}
+
+			.feature-item h3 {
+				font-size: 22px;
+				margin-bottom: 15px;
+				color: #2c3e50;
+				display: flex;
+				align-items: center;
+				gap: 12px
+			}
+
+			.feature-item .feature-icon {
+				color: #07c160;
+				font-size: 24px
+			}
+
+			.feature-item p {
+				color: #64748b;
+				line-height: 1.7;
+				margin-bottom: 15px
+			}
+
+			.feature-item ul {
+				margin: 15px 0;
+				padding-left: 20px
+			}
+
+			.feature-item li {
+				color: #64748b;
+				margin-bottom: 8px;
+				line-height: 1.6
+			}
+
+			/* CTA部分 */
+			.cta-section {
+				background: linear-gradient(135deg, #07c160, #05a050);
+				color: #fff;
+				padding: 60px 40px;
+				border-radius: 20px;
+				text-align: center;
+				margin-bottom: 50px;
+				box-shadow: 0 10px 40px rgba(7, 193, 96, .2)
+			}
+
+			.cta-title {
+				font-size: 36px;
+				margin-bottom: 20px;
+				font-weight: 700
+			}
+
+			.cta-text {
+				font-size: 18px;
+				margin-bottom: 35px;
+				opacity: .9;
+				max-width: 700px;
+				margin-left: auto;
+				margin-right: auto;
+				line-height: 1.6
+			}
+
+			.cta-buttons {
+				display: flex;
+				justify-content: center;
+				gap: 20px;
+				flex-wrap: wrap
+			}
+
+			.btn-primary,
+			.btn-secondary {
+				padding: 18px 40px;
+				border: none;
+				border-radius: 30px;
+				font-size: 18px;
+				font-weight: 600;
+				cursor: pointer;
+				transition: all .3s;
+				text-decoration: none;
+				display: inline-block
+			}
+
+			.btn-primary {
+				background: #fff;
+				color: #07c160
+			}
+
+			.btn-primary:hover {
+				transform: translateY(-3px);
+				box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+				background: #f8f9fa
+			}
+
+			.btn-secondary {
+				background: transparent;
+				color: #fff;
+				border: 2px solid rgba(255, 255, 255, .5)
+			}
+
+			.btn-secondary:hover {
+				background: rgba(255, 255, 255, .1);
+				transform: translateY(-3px)
+			}
+
+			/* 页脚 */
+			footer {
+				background: hsla(0, 0%, 100%, .9);
+				margin-top: 60px;
+				padding: 40px 0;
+				text-align: center;
+				color: #64748b
+			}
+
+			/* 响应式设计 */
+			@media (max-width:1024px) {
+				.container {
+					padding: 0 15px
+				}
+
+				.value-cards {
+					grid-template-columns: repeat(2, 1fr)
+				}
+
+				.comparison-grid {
+					grid-template-columns: 1fr;
+					gap: 30px
+				}
+
+				.features-grid {
+					grid-template-columns: 1fr
+				}
+			}
+
+			@media (max-width:767px) {
+				header {
+					position: fixed;
+					width: 100%;
+					top: 0;
+					z-index: 1000
+				}
+
+				body {
+					padding-top: 70px
+				}
+
+				nav {
+					position: relative;
+					padding: 15px 0
+				}
+
+				.logo {
+					font-size: 20px
+				}
+
+				.mobile-menu-btn {
+					display: block !important;
+					width: 30px;
+					height: 24px;
+					position: relative;
+					cursor: pointer;
+					background: 0 0;
+					border: none;
+					padding: 0
+				}
+
+				.mobile-menu-btn span {
+					display: block;
+					width: 100%;
+					height: 3px;
+					background: #2c3e50;
+					margin-bottom: 5px;
+					transition: all .3s;
+					border-radius: 2px
+				}
+
+				.mobile-menu-btn.active span:first-child {
+					transform: rotate(45deg) translate(5px, 5px)
+				}
+
+				.mobile-menu-btn.active span:nth-child(2) {
+					opacity: 0
+				}
+
+				.mobile-menu-btn.active span:nth-child(3) {
+					transform: rotate(-45deg) translate(7px, -6px)
+				}
+
+				.nav-links {
+					display: none;
+					position: absolute;
+					top: 100%;
+					left: 0;
+					right: 0;
+					background: hsla(0, 0%, 100%, .98);
+					flex-direction: column;
+					padding: 20px;
+					box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+					border-radius: 0 0 15px 15px;
+					gap: 15px
+				}
+
+				.nav-links.active {
+					display: flex
+				}
+
+				.nav-links a {
+					padding: 10px 0;
+					border-bottom: 1px solid #e0e0e0
+				}
+
+				.nav-links a:last-child {
+					border-bottom: none
+				}
+
+				.weinh_com-hero-section {
+					padding: 40px 20px
+				}
+
+				.hero-title {
+					font-size: 32px
+				}
+
+				.hero-subtitle {
+					font-size: 18px
+				}
+
+				.hero-btn {
+					padding: 15px 30px;
+					font-size: 18px
+				}
+
+				.section-title {
+					font-size: 28px
+				}
+
+				.value-cards {
+					grid-template-columns: 1fr;
+					gap: 20px
+				}
+
+				.value-card {
+					padding: 25px 20px
+				}
+
+				.comparison-section {
+					padding: 30px 20px
+				}
+
+				.cta-section {
+					padding: 40px 20px
+				}
+
+				.cta-title {
+					font-size: 28px
+				}
+
+				.cta-text {
+					font-size: 16px
+				}
+
+				.cta-buttons {
+					flex-direction: column;
+					align-items: center
+				}
+
+				.btn-primary,
+				.btn-secondary {
+					width: 100%;
+					max-width: 300px;
+					padding: 15px 20px
+				}
+			}
+
+			@media (max-width:480px) {
+				.hero-title {
+					font-size: 28px
+				}
+
+				.hero-subtitle {
+					font-size: 16px
+				}
+
+				.section-title {
+					font-size: 24px
+				}
+
+				.feature-item {
+					padding: 20px
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<nav>
+					<div class="logo">微信账号交易平台</div>
+					<button class="mobile-menu-btn" aria-label="切换菜单">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="nav-links" id="navLinks">
+						<a href="/#home">首页</a>
+						<a href="/lh.html" class="active" title="微信老号购买">微信老号</a>
+						<a href="/ny.html" title="购买微信耐用号">微信耐用号</a>
+						<a href="/#accounts" title="浏览所有微信账号">账号大厅</a>
+						<a href="/article.html" title="文章列表">文章列表</a>
+						<a href="/#about" title="了解我们的服务">关于我们</a>
+						<a href="/#contact" title="联系客服">联系我们</a>
+						<a href="/#orders" title="查询订单状态">订单查询</a>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main class="container">
+			<!-- 英雄区域 -->
+			<section class="weinh_com-hero-section">
+				<h1 class="hero-title">微信老号购买-稳定、高权重、功能完整必备！</h1>
+				<p class="hero-subtitle">新号易封、实名困难、功能受限！想保障微信营销和业务连续性？直接购买即用型微信成品老号，跳过繁琐的养号过程。</p>
+				<a href="/" class="hero-btn">立即购买微信稳定老号</a>
+			</section>
+
+			<!-- 核心价值部分 -->
+			<section class="value-section">
+				<h2 class="section-title">为什么必须购买微信老号？新号的致命弱点</h2>
+				<div class="value-cards">
+					<div class="value-card">
+						<div class="value-icon">⚠️</div>
+						<h3>高风控率</h3>
+						<p>新注册微信号权重低，任何非常规操作（如频繁加好友、进群）都可能触发风控系统，导致账号异常甚至封禁。</p>
+					</div>
+					<div class="value-card">
+						<div class="value-icon">⏳</div>
+						<h3>漫长的养号期</h3>
+						<p>必须花费数周甚至数月进行日常使用，建立正常使用记录，才能逐步提高账号权重和信任度。</p>
+					</div>
+					<div class="value-card">
+						<div class="value-icon">🔒</div>
+						<h3>功能受限</h3>
+						<p>新号通常无法使用微信支付、无法进入大群、无法添加大量好友，严重限制商业用途。</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- 对比部分 -->
+			<section class="comparison-section">
+				<h2 class="section-title">微信新号 vs 微信老号 全面对比</h2>
+				<div class="comparison-grid">
+					<div class="comparison-column new">
+						<h3>微信新号的痛点</h3>
+						<div class="comparison-item new">
+							<div class="comparison-icon">❌</div>
+							<div class="comparison-text">
+								<h4>注册即受限</h4>
+								<p>新注册账号功能有限，无法立即用于商业用途，需要长时间养号。</p>
+							</div>
+						</div>
+						<div class="comparison-item new">
+							<div class="comparison-icon">❌</div>
+							<div class="comparison-text">
+								<h4>实名认证困难</h4>
+								<p>微信实名认证要求严格，新号实名容易被限制，影响支付功能使用。</p>
+							</div>
+						</div>
+						<div class="comparison-item new">
+							<div class="comparison-icon">❌</div>
+							<div class="comparison-text">
+								<h4>高风险封禁</h4>
+								<p>新号进行任何非常规操作都可能导致账号异常、限制登录甚至永久封禁。</p>
+							</div>
+						</div>
+						<div class="comparison-item new">
+							<div class="comparison-icon">❌</div>
+							<div class="comparison-text">
+								<h4>支付功能限制</h4>
+								<p>新注册微信号支付额度极低，无法满足商业收款和转账需求。</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="comparison-column old">
+						<h3>微信老号的价值</h3>
+						<div class="comparison-item old">
+							<div class="comparison-icon">✅</div>
+							<div class="comparison-text">
+								<h4>高信任权重</h4>
+								<p>老号拥有长期使用记录，获得微信系统的高权重信任，抗封能力强。</p>
+							</div>
+						</div>
+						<div class="comparison-item old">
+							<div class="comparison-icon">✅</div>
+							<div class="comparison-text">
+								<h4>完整功能权限</h4>
+								<p>已实名认证，支付功能完整，可收发红包、转账，支持商业用途。</p>
+							</div>
+						</div>
+						<div class="comparison-item old">
+							<div class="comparison-icon">✅</div>
+							<div class="comparison-text">
+								<h4>即时投入使用</h4>
+								<p>无需养号过程，购买后即可立即用于营销、客服、社群管理等业务。</p>
+							</div>
+						</div>
+						<div class="comparison-item old">
+							<div class="comparison-icon">✅</div>
+							<div class="comparison-text">
+								<h4>稳定安全</h4>
+								<p>老号具有正常社交记录和活动轨迹，比新号更稳定，不易触发风控。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- 特性部分 -->
+			<section class="features-section">
+				<h2 class="section-title">微信老号的核心特性与优势</h2>
+				<div class="features-grid">
+					<div class="feature-item">
+						<h3><span class="feature-icon">🛡️</span> 安全稳定</h3>
+						<p>我们提供的微信老号均经过严格筛选，确保账号来源合法合规，历史记录干净无违规。</p>
+						<ul>
+							<li>实名认证完整，身份信息真实</li>
+							<li>长期正常使用记录，非异常账号</li>
+							<li>绑卡信息完整，支付功能正常</li>
+							<li>抗封能力强，适合商业用途</li>
+						</ul>
+					</div>
+					<div class="feature-item">
+						<h3><span class="feature-icon">🚀</span> 功能完整</h3>
+						<p>老号拥有微信全部功能权限，满足各种商业需求，无需担心功能受限。</p>
+						<ul>
+							<li>完整支付功能：收付款、转账、发红包</li>
+							<li>无限制加好友、加群（符合微信规则）</li>
+							<li>朋友圈、公众号、小程序等全部功能</li>
+							<li>支持多设备登录，管理方便</li>
+						</ul>
+					</div>
+					<div class="feature-item">
+						<h3><span class="feature-icon">📊</span> 多种类型可选</h3>
+						<p>根据您的具体需求，我们提供多种类型的微信老号，满足不同场景使用。</p>
+						<ul>
+							<li>国内实名老号：1年/2年/3年以上老号</li>
+							<li>海外微信老号：支持多国地区使用</li>
+							<li>带好友资源老号：含高质量社交关系</li>
+							<li>企业微信关联老号：适合企业运营</li>
+						</ul>
+					</div>
+					<div class="feature-item">
+						<h3><span class="feature-icon">⚡</span> 即买即用</h3>
+						<p>购买流程简单快捷，无需等待，账号到手即可投入使用，节省宝贵时间。</p>
+						<ul>
+							<li>自助购买，24小时自动发货</li>
+							<li>详细使用指南，快速上手</li>
+							<li>专业客服支持，解答疑问</li>
+							<li>售后保障，购买无忧</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA部分 -->
+			<section class="cta-section">
+				<h2 class="cta-title">购买稳定老号，保障您的微信营销！</h2>
+				<p class="cta-text">告别封号风险和漫长的养号过程，从一个稳定的微信老号开始您的商业运营。我们提供多种年份和类型的微信老号，满足不同场景需求，确保您的微信营销活动顺利进行。</p>
+				<div class="cta-buttons">
+					<a href="/" class="btn-secondary">前往选购高权重微信老号</a>
+				</div>
+			</section>
+		</main>
+		<footer>
+		    <div class="container">
+		        <p>&copy; 2025-2026 Weixinh.com, All rights reserved.</p>
+		    </div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>微信耐用号批发 - 规模化营销的稳定基石</title>
+		<meta name="description" content="专注提供高权重实名微信号、营销微信小号批发及各类微信号出售服务，系统支持24小时全自动发货，保障交易瞬时完成。本平台严格筛选货源，确保账号稳定耐封，是您寻找安全、专业微信号交易平台的首选。立即查看2026最新微信号库存，享受行业底价与完善的售后技术支持。">
+		<meta name="keywords" content="微信号购买,微信号批发,实名微信号购买,微信小号出售,微信号交易平台,微信号购买自动发货,买微信号">
+		<meta name="robots" content="index, follow">
+		<meta name="googlebot" content="index, follow">
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box
+			}
+
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif;
+				background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+				min-height: 100vh;
+				color: #2c3e50
+			}
+
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 0 20px
+			}
+
+			/* 头部导航样式 */
+			header {
+				background: hsla(0, 0%, 100%, .95);
+				backdrop-filter: blur(10px);
+				box-shadow: 0 4px 20px rgba(0, 0, 0, .08);
+				position: sticky;
+				top: 0;
+				z-index: 100
+			}
+
+			nav {
+				justify-content: space-between;
+				padding: 18px 0
+			}
+
+			.logo,
+			nav {
+				display: flex;
+				align-items: center
+			}
+
+			.logo {
+				font-size: 26px;
+				font-weight: 700;
+				background: linear-gradient(135deg, #07c160, #05a050);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				gap: 10px
+			}
+
+			.nav-links {
+				display: flex;
+				gap: 40px;
+				align-items: center
+			}
+
+			.nav-links a {
+				text-decoration: none;
+				color: #2c3e50;
+				font-weight: 500;
+				transition: all .3s;
+				position: relative
+			}
+
+			.nav-links a:after {
+				content: "";
+				position: absolute;
+				bottom: -5px;
+				left: 0;
+				width: 0;
+				height: 2px;
+				background: #07c160;
+				transition: width .3s
+			}
+
+			.nav-links a.active:after,
+			.nav-links a:hover:after {
+				width: 100%
+			}
+
+			.nav-links a.active,
+			.nav-links a:hover {
+				color: #07c160
+			}
+
+			.mobile-menu-btn {
+				display: none
+			}
+
+			/* 页面主内容区 */
+			.main-content {
+				margin: 40px 0
+			}
+
+			.hero-section {
+				background: linear-gradient(135deg, #2c3e50, #4a6491);
+				color: #fff;
+				padding: 70px 40px;
+				border-radius: 20px;
+				margin-bottom: 50px;
+				text-align: center;
+				box-shadow: 0 10px 40px rgba(44, 62, 80, .2);
+				margin-top: 40px;
+			}
+
+			.hero-title {
+				font-size: 42px;
+				margin-bottom: 20px;
+				font-weight: 700;
+				line-height: 1.3
+			}
+
+			.hero-subtitle {
+				font-size: 20px;
+				margin-bottom: 35px;
+				opacity: .9;
+				max-width: 800px;
+				margin-left: auto;
+				margin-right: auto
+			}
+
+			.hero-btn {
+				padding: 18px 50px;
+				background: linear-gradient(135deg, #07c160, #05a050);
+				color: #fff;
+				border: none;
+				border-radius: 30px;
+				font-size: 20px;
+				font-weight: 600;
+				cursor: pointer;
+				transition: all .3s;
+				text-decoration: none;
+				display: inline-block
+			}
+
+			.hero-btn:hover {
+				transform: translateY(-3px);
+				box-shadow: 0 10px 30px rgba(7, 193, 96, .4)
+			}
+
+			/* 核心价值部分 */
+			.value-section {
+				margin-bottom: 60px
+			}
+
+			.section-title {
+				font-size: 32px;
+				text-align: center;
+				position: relative;
+				padding-bottom: 20px;
+				margin-bottom: 50px
+			}
+
+			.section-title:after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 60px;
+				height: 3px;
+				background: linear-gradient(135deg, #07c160, #05a050);
+				border-radius: 2px
+			}
+
+			.value-cards {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 30px;
+				margin-top: 40px
+			}
+
+			.value-card {
+				background: #fff;
+				border-radius: 15px;
+				padding: 35px 30px;
+				box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+				transition: all .3s;
+				text-align: center;
+				border-top: 4px solid #07c160
+			}
+
+			.value-card:hover {
+				transform: translateY(-10px);
+				box-shadow: 0 15px 35px rgba(0, 0, 0, .12)
+			}
+
+			.value-icon {
+				width: 70px;
+				height: 70px;
+				background: linear-gradient(135deg, #e8f8f0, #d4f2e3);
+				border-radius: 12px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0 auto 25px;
+				font-size: 32px;
+				color: #07c160
+			}
+
+			.value-card h3 {
+				font-size: 22px;
+				margin-bottom: 15px;
+				color: #2c3e50
+			}
+
+			.value-card p {
+				color: #64748b;
+				line-height: 1.7;
+				font-size: 16px
+			}
+
+			/* 对比部分 */
+			.comparison-section {
+				background: #fff;
+				border-radius: 20px;
+				padding: 60px 50px;
+				margin-bottom: 60px;
+				box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+				position: relative;
+				overflow: hidden
+			}
+
+			.comparison-section:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 5px;
+				background: linear-gradient(90deg, #07c160, #2c3e50)
+			}
+
+			.comparison-title {
+				font-size: 28px;
+				text-align: center;
+				margin-bottom: 40px;
+				color: #2c3e50
+			}
+
+			.comparison-grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 40px;
+				margin-top: 30px
+			}
+
+			.comparison-column {
+				position: relative
+			}
+
+			.comparison-column h3 {
+				font-size: 24px;
+				margin-bottom: 25px;
+				padding-bottom: 15px;
+				border-bottom: 2px solid #e9ecef
+			}
+
+			.comparison-column.regular h3 {
+				color: #e74c3c
+			}
+
+			.comparison-column.durable h3 {
+				color: #07c160
+			}
+
+			.comparison-item {
+				display: flex;
+				align-items: flex-start;
+				margin-bottom: 20px;
+				padding: 18px;
+				border-radius: 10px;
+				background: #f8f9fa
+			}
+
+			.comparison-item.regular {
+				background: #fee;
+				border-left: 4px solid #e74c3c
+			}
+
+			.comparison-item.durable {
+				background: #e8f8f0;
+				border-left: 4px solid #07c160
+			}
+
+			.comparison-icon {
+				font-size: 20px;
+				margin-right: 15px;
+				flex-shrink: 0;
+				margin-top: 2px
+			}
+
+			.comparison-text {
+				flex: 1
+			}
+
+			.comparison-text h4 {
+				font-size: 17px;
+				margin-bottom: 5px
+			}
+
+			.comparison-text p {
+				color: #64748b;
+				font-size: 15px;
+				line-height: 1.6
+			}
+
+			/* 批量优势部分 */
+			.batch-advantages {
+				background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+				border-radius: 20px;
+				padding: 50px 40px;
+				margin-bottom: 60px;
+				box-shadow: 0 8px 25px rgba(0, 0, 0, .06)
+			}
+
+			.batch-title {
+				font-size: 28px;
+				text-align: center;
+				margin-bottom: 40px;
+				color: #2c3e50
+			}
+
+			.batch-grid {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 30px
+			}
+
+			.batch-card {
+				background: #fff;
+				border-radius: 15px;
+				padding: 30px;
+				box-shadow: 0 5px 15px rgba(0, 0, 0, .05);
+				transition: all .3s
+			}
+
+			.batch-card:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 10px 25px rgba(0, 0, 0, .1)
+			}
+
+			.batch-card h3 {
+				font-size: 20px;
+				margin-bottom: 15px;
+				color: #2c3e50;
+				display: flex;
+				align-items: center;
+				gap: 10px
+			}
+
+			.batch-icon {
+				color: #07c160;
+				font-size: 24px
+			}
+
+			.batch-card ul {
+				margin: 15px 0;
+				padding-left: 20px
+			}
+
+			.batch-card li {
+				color: #64748b;
+				margin-bottom: 8px;
+				line-height: 1.6
+			}
+
+			.batch-highlight {
+				background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+				padding: 15px;
+				border-radius: 10px;
+				margin-top: 20px;
+				border-left: 4px solid #f57c00
+			}
+
+			.batch-highlight h4 {
+				color: #f57c00;
+				margin-bottom: 8px
+			}
+
+			/* 选择理由部分 */
+			.reasons-section {
+				margin-bottom: 60px
+			}
+
+			.reasons-grid {
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				gap: 25px;
+				margin-top: 40px
+			}
+
+			.reason-item {
+				background: #fff;
+				border-radius: 15px;
+				padding: 30px 25px;
+				text-align: center;
+				box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+				transition: all .3s;
+				border: 2px solid transparent
+			}
+
+			.reason-item:hover {
+				transform: translateY(-8px);
+				box-shadow: 0 12px 30px rgba(0, 0, 0, .12);
+				border-color: #07c160
+			}
+
+			.reason-number {
+				width: 50px;
+				height: 50px;
+				background: linear-gradient(135deg, #07c160, #05a050);
+				color: #fff;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0 auto 20px;
+				font-size: 22px;
+				font-weight: 700
+			}
+
+			.reason-item h3 {
+				font-size: 18px;
+				margin-bottom: 12px;
+				color: #2c3e50
+			}
+
+			.reason-item p {
+				color: #64748b;
+				font-size: 15px;
+				line-height: 1.6
+			}
+
+			/* CTA部分 */
+			.cta-section {
+				background: linear-gradient(135deg, #07c160, #05a050);
+				color: #fff;
+				padding: 70px 50px;
+				border-radius: 20px;
+				text-align: center;
+				margin-bottom: 60px;
+				box-shadow: 0 10px 40px rgba(7, 193, 96, .2);
+				position: relative;
+				overflow: hidden
+			}
+
+			.cta-section:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.05)"/></svg>');
+				background-size: cover
+			}
+
+			.cta-title {
+				font-size: 36px;
+				margin-bottom: 25px;
+				font-weight: 700;
+				position: relative;
+				z-index: 1
+			}
+
+			.cta-text {
+				font-size: 18px;
+				margin-bottom: 40px;
+				opacity: .9;
+				max-width: 800px;
+				margin-left: auto;
+				margin-right: auto;
+				line-height: 1.6;
+				position: relative;
+				z-index: 1
+			}
+
+			.cta-buttons {
+				display: flex;
+				justify-content: center;
+				gap: 25px;
+				flex-wrap: wrap;
+				position: relative;
+				z-index: 1
+			}
+
+			.btn-primary,
+			.btn-secondary {
+				padding: 18px 45px;
+				border: none;
+				border-radius: 30px;
+				font-size: 18px;
+				font-weight: 600;
+				cursor: pointer;
+				transition: all .3s;
+				text-decoration: none;
+				display: inline-block
+			}
+
+			.btn-primary {
+				background: #fff;
+				color: #07c160
+			}
+
+			.btn-primary:hover {
+				transform: translateY(-3px);
+				box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+				background: #f8f9fa
+			}
+
+			.btn-secondary {
+				background: transparent;
+				color: #fff;
+				border: 2px solid rgba(255, 255, 255, .5)
+			}
+
+			.btn-secondary:hover {
+				background: rgba(255, 255, 255, .1);
+				transform: translateY(-3px)
+			}
+
+			/* 页脚 */
+			footer {
+				background: hsla(0, 0%, 100%, .9);
+				margin-top: 80px;
+				padding: 50px 0;
+				text-align: center;
+				color: #64748b
+			}
+
+			/* 响应式设计 */
+			@media (max-width:1024px) {
+				.container {
+					padding: 0 15px
+				}
+
+				.value-cards {
+					grid-template-columns: repeat(2, 1fr)
+				}
+
+				.comparison-grid {
+					grid-template-columns: 1fr;
+					gap: 30px
+				}
+
+				.batch-grid {
+					grid-template-columns: 1fr
+				}
+
+				.reasons-grid {
+					grid-template-columns: repeat(2, 1fr)
+				}
+			}
+
+			@media (max-width:767px) {
+				header {
+					position: fixed;
+					width: 100%;
+					top: 0;
+					z-index: 1000
+				}
+
+				body {
+					padding-top: 70px
+				}
+
+				nav {
+					position: relative;
+					padding: 15px 0
+				}
+
+				.logo {
+					font-size: 20px
+				}
+
+				.mobile-menu-btn {
+					display: block !important;
+					width: 30px;
+					height: 24px;
+					position: relative;
+					cursor: pointer;
+					background: 0 0;
+					border: none;
+					padding: 0
+				}
+
+				.mobile-menu-btn span {
+					display: block;
+					width: 100%;
+					height: 3px;
+					background: #2c3e50;
+					margin-bottom: 5px;
+					transition: all .3s;
+					border-radius: 2px
+				}
+
+				.mobile-menu-btn.active span:first-child {
+					transform: rotate(45deg) translate(5px, 5px)
+				}
+
+				.mobile-menu-btn.active span:nth-child(2) {
+					opacity: 0
+				}
+
+				.mobile-menu-btn.active span:nth-child(3) {
+					transform: rotate(-45deg) translate(7px, -6px)
+				}
+
+				.nav-links {
+					display: none;
+					position: absolute;
+					top: 100%;
+					left: 0;
+					right: 0;
+					background: hsla(0, 0%, 100%, .98);
+					flex-direction: column;
+					padding: 20px;
+					box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+					border-radius: 0 0 15px 15px;
+					gap: 15px
+				}
+
+				.nav-links.active {
+					display: flex
+				}
+
+				.nav-links a {
+					padding: 10px 0;
+					border-bottom: 1px solid #e0e0e0
+				}
+
+				.nav-links a:last-child {
+					border-bottom: none
+				}
+
+				.hero-section {
+					padding: 50px 20px
+				}
+
+				.hero-title {
+					font-size: 32px
+				}
+
+				.hero-subtitle {
+					font-size: 18px
+				}
+
+				.hero-btn {
+					padding: 15px 30px;
+					font-size: 18px
+				}
+
+				.section-title {
+					font-size: 28px
+				}
+
+				.value-cards {
+					grid-template-columns: 1fr;
+					gap: 20px
+				}
+
+				.value-card {
+					padding: 25px 20px
+				}
+
+				.comparison-section {
+					padding: 40px 25px
+				}
+
+				.batch-advantages {
+					padding: 40px 25px
+				}
+
+				.reasons-grid {
+					grid-template-columns: 1fr;
+					gap: 20px
+				}
+
+				.cta-section {
+					padding: 50px 25px
+				}
+
+				.cta-title {
+					font-size: 28px
+				}
+
+				.cta-text {
+					font-size: 16px
+				}
+
+				.cta-buttons {
+					flex-direction: column;
+					align-items: center
+				}
+
+				.btn-primary,
+				.btn-secondary {
+					width: 100%;
+					max-width: 300px;
+					padding: 15px 20px
+				}
+			}
+
+			@media (max-width:480px) {
+				.hero-title {
+					font-size: 28px
+				}
+
+				.hero-subtitle {
+					font-size: 16px
+				}
+
+				.section-title {
+					font-size: 24px
+				}
+
+				.comparison-title,
+				.batch-title {
+					font-size: 24px
+				}
+
+				.batch-card {
+					padding: 20px
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<nav>
+					<div class="logo">微信账号交易平台</div>
+					<button class="mobile-menu-btn" aria-label="切换菜单">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="nav-links" id="navLinks">
+						<a href="/#home">首页</a>
+						<a href="/lh.html" title="微信老号购买">微信老号</a>
+						<a href="/ny.html" class="active" title="购买微信耐用号">微信耐用号</a>
+						<a href="/#accounts" title="浏览所有微信账号">账号大厅</a>
+						<a href="/article.html" title="文章列表">文章列表</a>
+						<a href="/#about" title="了解我们的服务">关于我们</a>
+						<a href="/#contact" title="联系客服">联系我们</a>
+						<a href="/#orders" title="查询订单状态">订单查询</a>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main class="container">
+			<!-- 英雄区域 -->
+			<section class="hero-section">
+				<h1 class="hero-title">微信耐用号批发，规模化营销的稳定基石！</h1>
+				<p class="hero-subtitle">批量运营需要高质量、高稳定性的耐用账号池。享受耐用老号的批发价格和定制服务，为您的规模化微信营销保驾护航！</p>
+				<a href="/" class="hero-btn">获取批发优惠方案</a>
+			</section>
+
+			<!-- 核心价值部分 -->
+			<section class="value-section">
+				<h2 class="section-title">为什么批量运营必须选择微信耐用老号？</h2>
+				<div class="value-cards">
+					<div class="value-card">
+						<div class="value-icon">🛡️</div>
+						<h3>深度养护历史</h3>
+						<p>账号建立时间久（1-3年以上），拥有真实的社交行为记录和支付历史，微信系统信任度高，抗风险能力强。</p>
+					</div>
+					<div class="value-card">
+						<div class="value-icon">⚡</div>
+						<h3>极致抗封性</h3>
+						<p>能够承受批量操作压力，如同时管理多个社群、频繁互动、大规模营销活动，不易触发微信风控系统。</p>
+					</div>
+					<div class="value-card">
+						<div class="value-icon">💰</div>
+						<h3>降低维护成本</h3>
+						<p>账号稳定意味着封号率低，减少了频繁更换和重新养号的时间与金钱投入，规模化运营更经济高效。</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- 对比部分 -->
+			<section class="comparison-section">
+				<h2 class="comparison-title">普通号 vs 耐用号 全面对比</h2>
+				<div class="comparison-grid">
+					<div class="comparison-column regular">
+						<h3>普通微信号的局限</h3>
+						<div class="comparison-item regular">
+							<div class="comparison-icon">❌</div>
+							<div class="comparison-text">
+								<h4>抗压能力弱</h4>
+								<p>无法承受批量操作，频繁互动或同时管理多个社群极易触发风险警告。</p>
+							</div>
+						</div>
+						<div class="comparison-item regular">
+							<div class="comparison-icon">❌</div>
+							<div class="comparison-text">
+								<h4>维护成本高</h4>
+								<p>频繁更换账号导致运营中断，重新养号和实名认证增加时间和资金成本。</p>
+							</div>
+						</div>
+						<div class="comparison-item regular">
+							<div class="comparison-icon">❌</div>
+							<div class="comparison-text">
+								<h4>功能受限</h4>
+								<p>新号或低权重号支付限额低，加人进群受限，影响规模化运营效率。</p>
+							</div>
+						</div>
+						<div class="comparison-item regular">
+							<div class="comparison-icon">❌</div>
+							<div class="comparison-text">
+								<h4>稳定性差</h4>
+								<p>缺乏长期使用记录，系统信任度低，任何非常规操作都可能导致异常。</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="comparison-column durable">
+						<h3>耐用号的专业优势</h3>
+						<div class="comparison-item durable">
+							<div class="comparison-icon">✅</div>
+							<div class="comparison-text">
+								<h4>高抗压设计</h4>
+								<p>专门针对批量运营设计，可承受高强度商业操作，支持规模化营销需求。</p>
+							</div>
+						</div>
+						<div class="comparison-item durable">
+							<div class="comparison-icon">✅</div>
+							<div class="comparison-text">
+								<h4>成本效益高</h4>
+								<p>长期稳定使用降低更换频率，批发价格进一步摊薄单个账号成本。</p>
+							</div>
+						</div>
+						<div class="comparison-item durable">
+							<div class="comparison-icon">✅</div>
+							<div class="comparison-text">
+								<h4>功能完整</h4>
+								<p>全部实名认证，支付功能完整，支持高额度转账收款，无加人进群限制。</p>
+							</div>
+						</div>
+						<div class="comparison-item durable">
+							<div class="comparison-icon">✅</div>
+							<div class="comparison-text">
+								<h4>长期稳定</h4>
+								<p>拥有多年正常使用记录，微信系统信任度高，适合长期稳定的商业运营。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- 批量优势部分 -->
+			<section class="batch-advantages">
+				<h2 class="batch-title">微信耐用号批发的专业化优势</h2>
+				<div class="batch-grid">
+					<div class="batch-card">
+						<h3><span class="batch-icon">💰</span> 成本优势明显</h3>
+						<p>批量购买享受阶梯价格优惠，数量越大单价越低，大幅降低规模化运营的账号成本。</p>
+						<ul>
+							<li>10个起批，享受8折优惠</li>
+							<li>50个以上，享受7折优惠</li>
+							<li>100个以上，享受6折优惠</li>
+							<li>定制化批量方案，价格更优</li>
+						</ul>
+						<div class="batch-highlight">
+							<h4>💡 批发价计算示例</h4>
+							<p>单买价 $30 × 100个 = $3000<br>批发价 $18 × 100个 = $1800<br>立省 $1200！</p>
+						</div>
+					</div>
+					<div class="batch-card">
+						<h3><span class="batch-icon">⚙️</span> 技术支持完善</h3>
+						<p>提供批量操作的技术解决方案，支持各种规模化运营场景，提高管理效率。</p>
+						<ul>
+							<li>提供批量导出数据，方便管理</li>
+							<li>支持多设备同时登录管理</li>
+							<li>提供防关联操作指南</li>
+							<li>技术团队一对一支持</li>
+						</ul>
+						<div class="batch-highlight">
+							<h4>🎯 适用场景</h4>
+							<p>企业客服矩阵、社群营销团队、电商运营、自媒体矩阵、教育培训机构等</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- 选择理由部分 -->
+			<section class="reasons-section">
+				<h2 class="section-title">选择我们进行微信耐用号批发的理由</h2>
+				<div class="reasons-grid">
+					<div class="reason-item">
+						<div class="reason-number">1</div>
+						<h3>高品质保证</h3>
+						<p>所有耐用号均经过严格筛选，历史记录干净，实名认证完整，确保高稳定性和耐用性。</p>
+					</div>
+					<div class="reason-item">
+						<div class="reason-number">2</div>
+						<h3>批量定制服务</h3>
+						<p>根据客户运营规模和业务类型，提供定制化的账号批次，满足不同场景需求。</p>
+					</div>
+					<div class="reason-item">
+						<div class="reason-number">3</div>
+						<h3>完善的售后体系</h3>
+						<p>提供专业的技术指导和快速更换服务，确保批量采购无忧，运营稳定持续。</p>
+					</div>
+					<div class="reason-item">
+						<div class="reason-number">4</div>
+						<h3>稳定的供应链</h3>
+						<p>专业渠道保证持续、稳定的账号供应，支持您的账号矩阵持续扩张需求。</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA部分 -->
+			<section class="cta-section">
+				<h2 class="cta-title">规模化运营，从稳定的耐用号池开始！</h2>
+				<p class="cta-text">不要让劣质账号成为您营销矩阵的短板。立即联系我们获取微信耐用号批发报价，为您的规模化微信营销打下坚实基础！</p>
+				<div class="cta-buttons">
+					<a href="/" class="btn-secondary">立即前往批量采购</a>
+				</div>
+			</section>
+		</main>
+		<footer>
+		    <div class="container">
+		        <p>&copy; 2025-2026 Weixinh.com, All rights reserved.</p>
+		    </div>
+		</footer>
+	</body>
+</html>
